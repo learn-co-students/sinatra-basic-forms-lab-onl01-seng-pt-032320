@@ -11,8 +11,4 @@ class Puppy
         save
     end
 
-    def save
-        @@all << self
-    end
-
 end
