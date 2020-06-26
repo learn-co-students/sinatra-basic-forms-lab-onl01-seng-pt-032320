@@ -2,7 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
     get '/' do 
-        erb:index
+        erb :index
     end
 
     post '/puppy' do
@@ -10,6 +10,6 @@ class App < Sinatra::Base
         pup_breed = params[:breed]
         pup_age = params[:age]
         @new_pup = Puppy.new(pup_name, pup_breed, pup_age)
-        erb:display_puppy
+        erb :display_puppy
     end
 end
